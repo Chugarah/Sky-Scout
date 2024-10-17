@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    height: 100svh;
+}
+
+h1{
+    color:#2980b9;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color:#a1b0b6
+}
+
+.main-container {
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 100%;
+}
+
+.stockForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+    input{
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        padding: .5rem;
+        border: none;
+    }
+}
+
+.newsForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+    input{
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        padding: .5rem;
+        border: none;
+    }
+}
+
+.weather-container, .stock-container, .news-container{
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    max-width: 350px;
+    border-radius: 0.5rem;
+    padding: 5.5rem;
+}
+
+.weatherForm {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cityInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.submitButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #2980b9;
+}
+
+.card {
+    text-align: center;
+}
+
+.cityDisplay {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.tempDisplay {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.humidityDisplay, .weatherEmoji {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.errorDisplay {
+    color: #ff6b6b;
+    font-style: italic;
+    text-shadow: none;
+}
+
+/* Add this if you want a title for your app */
+
+
+.appTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.bigger-icons{
+    font-size: 3rem;;
+}

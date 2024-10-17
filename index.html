@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Weather, Stocks & News App</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- VÄDER -->
+      <div class="container weather-container">
+        <h2>Väder</h2>
+        <!-- <form class="weatherForm">
+          <input type="text" class="cityInput" placeholder="Sök Stad" />
+          <button type="submit" class="submitButton">Få Väder</button>
+        </form> -->
+        <div class="card">
+          <h2 class="cityDisplay"></h2>
+          <p class="weatherEmoji"></p>
+          <p class="tempDisplay"></p>
+          <p class="humidityDisplay"></p>
+        </div>
+      </div>
+
+      <!-- AKTIE -->
+      <div class="container stock-container">
+        <h2>Aktie</h2>
+        <form class="stockForm">
+          <!-- <input
+            type="text"
+            class="stockInput"
+            placeholder="Sök Aktie (t.ex IBM)"
+          />
+          <button type="submit" class="submitButton">Översikt</button> -->
+        </form>
+        <div class="stockOverviewCard">
+          <h3 class="companyNameDisplay">Företagsnamn</h3>
+          <p class="marketCapDisplay">Marknadsvärde:</p>
+          <p class="epsDisplay">Vinst per aktie:</p>
+          <p class="sectorDisplay">Sektor:</p>
+          <p class="descriptionDisplay">Beskrivning:</p>
+          <p class="errorDisplay">Kunde inte hämta företagsinformation.</p>
+        </div>
+      </div>
+
+      <!-- NYHETER -->
+      <div class="container news-container">
+        <h2>Nyheter</h2>
+        <!-- <form class="newsForm">
+          <input type="text" class="newsInput" placeholder="Sök nyheter" />
+          <button type="submit" class="submitButton">Få Nyheter</button>
+        </form> -->
+        <div class="newsCard">
+          <h3 class="newsTitleDisplay">Sky-Scout</h3>
+          <p class="newsDescriptionDisplay">
+            Sky-scout säljs för 100 miljarder till Google
+          </p>
+          <p class="newsLink"></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
